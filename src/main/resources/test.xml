@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="demo">
+    <test name="demo1">
+        <classes>
+            <class name="com.milo.automation.atframework.controller.HelloController"/>
+            <class name="com.milo.automation.atframework.Demo"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.milo.automation.atframework.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+</suite>
