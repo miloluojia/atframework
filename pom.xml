@@ -42,14 +42,28 @@
             <artifactId>testng</artifactId>
             <version>6.10</version>
         </dependency>
-        <!--testng报告-->
+        <!--extentReport报告-->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>3.1.1</version>
         </dependency>
 
-
+        <!--mybatis+mysql-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <!--<scope>runtime</scope>-->
+        </dependency>
     </dependencies>
 
     <build>
