@@ -1,6 +1,6 @@
-package com.milo.automation.atframework.POJO.DO;
+package com.milo.automation.atframework.pojo.doAnddto;
 
-public class Teacher {
+public class TeacherDO {
 
     private String Tid;
 

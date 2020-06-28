@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.milo.automation.atframework.mapper.TeacherMapper">
+<mapper namespace="com.milo.automation.atframework.dao.mapper.TeacherMapper">
 
-    <!--public Teacher getTeacherById(int id);-->
-    <select id="getTeacherById" resultType="com.milo.automation.atframework.POJO.DO.Teacher">
+    <!--public TeacherDO getTeacherById(int id);-->
+    <select id="getTeacherById" resultType="com.milo.automation.atframework.pojo.doAnddto.TeacherDO">
         select * from Teacher where Tid = #{Tid};
     </select>
 

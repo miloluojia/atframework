@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.milo.automation.atframework.mapper")
+@MapperScan(basePackages = "com.milo.automation.atframework")
 
 public class AtframeworkApplication {
 
