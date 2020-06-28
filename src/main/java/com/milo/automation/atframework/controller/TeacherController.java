@@ -57,9 +57,15 @@ public class TeacherController {
             JavaStringCompiler compiler = new JavaStringCompiler();
             Map<String, byte[]> results = compiler.compile("UserProxy.java", JAVA_SOURCE_CODE);
             Class<?> clazz = compiler.loadClass("com.milo.automation.atframework.controller.UserProxy", results);
+//            User user = (User) clazz.newInstance();
+            Object userProxy = clazz.newInstance();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
             e.printStackTrace();
         }
         return true;

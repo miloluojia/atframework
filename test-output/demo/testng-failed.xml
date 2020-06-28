@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [demo]">
+  <listeners>
+    <listener class-name="com.milo.automation.atframework.listener.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="demo1(failed)">
+    <classes>
+      <class name="com.milo.automation.atframework.Demo">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.milo.automation.atframework.Demo -->
+    </classes>
+  </test> <!-- demo1(failed) -->
+</suite> <!-- Failed suite [demo] -->
